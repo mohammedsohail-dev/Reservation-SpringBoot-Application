@@ -46,12 +46,12 @@ A secure Spring Boot backend application for reservation management with MongoDB
 - MongoDB 5+
 - Keycloak server (optional) delete security folder for this
 
-### Configure your MongoDB in application.properties:
--spring.data.mongodb.uri=mongodb://localhost:27017/reservations
--keycloak.realm=your-realm
--keycloak.auth-server-url=http://localhost:8080/auth
--keycloak.resource=your-client-id
+### Configure your MongoDB and Keycloak in application.properties:
+- spring.data.mongodb.uri=mongodb://localhost:27017/reservations
+- keycloak.realm=your-realm
+- keycloak.auth-server-url=http://localhost:8080/auth
+- keycloak.resource=your-client-id
 
 ### Build and run:
--mvn clean install
--mvn spring-boot:run
+- mvn clean install
+- mvn spring-boot:run
